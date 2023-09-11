@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-18">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Technical Documentation Page</title>
+    <style>
+   
+@media only screen and (max-width: 600px) {
+  #main-doc{
+    position: absolute;
+    margin: 0;
+  }
+
+  #navbar{
+    position: fixed;
+    top: 0;
+    border-right: none;
+    height: 50%;
+    width: auto;
+
+  }
+}
+
+
+
+main{
+  font-family: "Nunito sans", tahoma;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 10px;
+  position: absolute;
+  margin-left: 30%;
+}
+
+section{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0; 
+}
+
+header{
+  font-family: "Nanum Gothic", tahoma;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 5%;
+}
+
+p{
+  margin-left: 8%;
+}
+
+code {
+display: block;
+margin-left: 0;
+overflow: wrap;
+background-color: GhostWhite;
+border-radius: 7px;
+padding: 12px;
+}
+
+a{
+  margin: 10%;
+}
+
+#navbar{
+  height: 100%;
+  width: 30%;
+  border-right: 3px solid #a3a0a0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+nav  ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  height: 100%;
+  padding: 0;
+  
+}
+
+nav > ul > li{
+  border-top: 2px solid #8f8f8f;
+  height: 8%;
+  margin: 10px;
+  width: 100%;
+ 
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+  }
+  </style>
+  </head>
+  <body>
+    <main id="main-doc">
+
+    
+     <nav id="navbar">
+      <header id="header">JS Documentation</header>
+      <ul>
+       <li> <a href="#introduction" class="nav-link"> Introduction </a> </li>
+       <li> <a href="#what_you_should_know" class="nav-link"> What you should know </a> </li>
+       <li> <a href="#Java_and_Javascript" class="nav-link"> Java and Javascript </a> </li>
+       <li> <a href="#Hello_World" class="nav-link"> Hello World </a> </li>
+       <li> <a href="#variables" class="nav-link"> Variables </a> </li>
+     </ul>
+    </nav>
+
+      <section class="main-section"  id="introduction">
+        <header id="introduction">Introduction</header>
+        
+        <code>
+      <p>JavaScript is a cross-platform, object-oriented scripting language. It
+        is a small and lightweight language. Inside a host environment (for
+        example, a web browser), JavaScript can be connected to the objects of
+        its environment to provide programmatic control over them.</p>
+      <p>JavaScript contains a standard library of objects, such as Array, Date,
+        and Math, and a core set of language elements such as operators, control
+        structures, and statements. Core JavaScript can be extended for a
+        variety of purposes by supplementing it with additional objects; for
+        example:</p>
+         <ul> 
+           <li>          Client-side JavaScript extends the core language by supplying objects
+          to control a browser and its Document Object Model (DOM). For example,
+          client-side extensions allow an application to place elements on an
+          HTML form and respond to user events such as mouse clicks, form input,
+          and page navigation.</li>
+           </ul>
+        </code>
+      </section>
+          <section class="main-section" id="what_you_should_know"> <header id="what_you_should_know">What you should know</header>  <code>
+         <p> </p>
+          <p>This guide assumes you have the following basic background:</p>
+           <ul> 
+             <li> A general understanding of the Internet and the World Wide Web (WWW).</li>
+             <li> Good working knowledge of HyperText Markup Language (HTML).</li>
+           </ul>
+          </code>  
+          
+          </section>
+              <section class="main-section" id="Java_and_Javascript">
+      <header> Java and Javascript </header>
+      <code>
+      <p> JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+
+       <p> In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+
+        <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed. 
+        </p> 
+        </code>
+<section class="main-section" id="Hello_World">
+      <header> Hello World</header>
+      <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+        
+        <code> function greetMe(yourName) { alert("Hello " + yourName); }
+        greetMe("World"); </code>
+        Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!browser! </p>
+         <ul> <li></li></ul>
+    </section>
+                      <section class="main-section" id="variables"> <header id="variables">Variables</header>
+                       <code>
+                      <p>You use variables as symbolic names for values in your application. The
+      names of variables, called identifiers, conform to certain rules.</p>
+                       <p>A JavaScript identifier must start with a letter, underscore (_), or
+      dollar sign ($); subsequent characters can also be digits (0-9). Because
+      JavaScript is case sensitive, letters include the characters "A" through
+      "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                       <ul> <li></li></ul>
+                       </code>
+                     
+      </section>
+        
+    </main>
+  </body>
+  </html>
